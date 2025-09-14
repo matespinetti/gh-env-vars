@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.ziixwq9.mongodb.net
-      MONGODB_USERNAME: matespinetti
-      MONGODB_PASSWORD: MJdLhsgx21VAKkjv
+      MONGODB_USERNAME: juan
+      MONGODB_PASSWORD: $Lpabc123
       PORT: 8080
     steps:
       - name: Get Code
