@@ -11,9 +11,9 @@ jobs:
     environment: testing
     runs-on: ubuntu-latest
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster0.ziixwq9.mongodb.net
-      MONGODB_USERNAME: juan
-      MONGODB_PASSWORD: $Lpabc123
+      MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD}}
       PORT: 8080
     steps:
       - name: Get Code
